@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ihrm-company #指定服务名
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.181:3306/shiro_db?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+#    show-sql: true
+#    open-in-view: true
+#    hibernate:
+#      ddl-auto: create
+#spring.jpa.hibernate.ddl-auto=create
+  redis:
+    host: 192.168.100.181
+    port: 6379
